@@ -30,4 +30,8 @@ void display(Pilha* pi);                   // Imprime o conteúdo da pilha
 void limparPilha(Pilha* pi);               // Esvazia a pilha
 void limpar_buffer();
 
+int estaVazia(Pilha* pi);
+
+int contarItens(Pilha* pi);
+
 #endif
