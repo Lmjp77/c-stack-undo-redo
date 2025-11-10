@@ -57,6 +57,34 @@ void display(Pilha* pi){
 
 void limparPilha(Pilha* pi){
     if (pi == NULL) return;
+    // ... (resto do seu pilha.c) ...
+
+void limparPilha(Pilha* pi){
+    if (pi == NULL) return;
+
+    while (pi->topo != NULL){
+        char* texto = pop(pi);
+        
+        if (texto != NULL){
+            free(texto);
+        }
+    }
+}
+
+int estaVazia(Pilha* pi) {
+   
+    if (pi == NULL) {
+        return 1;
+    }
+
+    return (pi->topo == NULL); 
+}
+
+void limpar_buffer(){
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+    
 
     while (pi->topo != NULL){
         char* texto = pop(pi);
