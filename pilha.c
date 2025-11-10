@@ -81,3 +81,21 @@ void limpar_buffer(){
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
+int estaVazia(Pilha* pi){
+    return (pi == NULL || pi->topo == NULL);
+}
+
+int contarItens(Pilha* pi){
+    if (pi == NULL) return 0;
+    int count = 0;
+    No* atual = pi->topo;
+    while (atual != NULL){
+        count++;
+        atual = atual->prox;
+    }
+    return count;
+}

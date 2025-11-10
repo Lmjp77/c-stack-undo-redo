@@ -32,3 +32,8 @@ int estaVazia(Pilha* pi);                 // <-- NOVA FUNÇÃO ADICIONAD
 void limpar_buffer();
 
 #endif
+int estaVazia(Pilha* pi);
+
+int contarItens(Pilha* pi);
+
+#endif

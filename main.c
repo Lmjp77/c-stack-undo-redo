@@ -92,6 +92,16 @@ int main() {
                 getchar();
                 break;
             }
+                if (estaVazia(todo_list)) {
+                    printf("\nSua lista esta vazia.\n");
+                } else {
+                    printf("\nO proximo item a fazer e: %s\n", todo_list->topo->texto);
+                }
+                
+                printf("\nAperte <ENTER> para voltar.");
+                getchar(); 
+                break;
+            }
 
             case 5:{
                 system(LIMPAR_TELA);
@@ -114,6 +124,31 @@ int main() {
     
     limparPilha(todo_list); 
     free(todo_list);        
+             case 5:{ 
+                system(LIMPAR_TELA);
+                printf("--- Contagem de Itens ---\n");
+                int qtd = contarItens(todo_list);
+                printf("\nA lista possui %d item(ns).\n", qtd);
+                printf("\nAperte <ENTER> para voltar.");
+                getchar();
+                break;
+            }
+
+            case 6:{
+                system(LIMPAR_TELA);
+                printf("Saindo e limpando a memoria...\n");
+                break;
+            }
+            default:{
+                system(LIMPAR_TELA);
+                printf("Erro");
+                printf("Opcao invalida. Tente novamente.\n");
+                
+                
+                printf("\nAperte <ENTER> para voltar.");
+                getchar();
+            }
+        }
 
     printf("Programa finalizado.\n");
     return 0;
