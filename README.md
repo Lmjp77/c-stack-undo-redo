@@ -7,8 +7,9 @@ Este projeto foi criado como um exercício prático da faculdade para demonstrar
 Alunos: 
 João Manoel Freire,
 João Pedro Magalhães,
-Rafael Maia e
-Leonardo Freitas Barboza.
+Rafael Maia,
+Leonardo Freitas Barboza e
+Bruno Braga Ramos.
 
 ## O Conceito da Pilha (LIFO)
 
